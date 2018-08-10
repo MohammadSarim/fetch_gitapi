@@ -20,17 +20,13 @@
 
         <nav class="navbar navbar-dark default-color justify-content-between">
                 <a class="navbar-brand" href="#">Github Api</a>
-                <form class="form-inline my-1">
-                    <div class="md-form form-sm my-0">
-                        <input class="form-control form-control-sm mr-sm-2 mb-0" type="text" placeholder="Search" aria-label="Search">
-                    </div>
-                    <button class="btn btn-outline-white btn-sm my-0" type="submit">Search</button>
-                </form>
+                
             </nav>
     <!-- ================================================================== -->
 
+            
     <!-- ================================================================== -->
-
+            
 
     <!-- ================================================================== -->
 
@@ -44,4 +40,15 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.3/js/mdb.min.js"></script>
 
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('script/sw.js')
+        .then(function () {
+            console.log('Service Worker Registered');
+        })
+.catch(function (err) {
+    console.log("error" ,err);
+})
+    }
+</script>
 </html>
